@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootsrap Template 1</title> 
+        
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+        
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+          @media(max-width:1200px){
+            #sidebar {
+              width:60%;
+            }
+            #space {
+              margin-bottom: 300px;
+            }
+          }
+          @media(min-width:768px){
+            #sidebar {
+              width:20%;
+            }
+            #space {
+              margin-bottom: 350px;
+            }
+          }
+          #button :hover {
+            background-color: blue;
+          }
+        </style>
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a href="#" class="navbar-brand" style="color: black;">Offcanvas Example</a>
+          <button class="navbar-toggler bg-dark navbar-dark" data-bs-target="#navmenu" data-bs-toggle="collapse" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto px-2">
+              <li class="nav-item">
+                <a href="#" class="nav-link" style="color: black;">Login/Signin</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search">
+              <button class="btn btn-outline-success" type="button">
+                <div class="d-flex">
+                  <i class="bi bi-search me-1"></i>
+                  Search
+                </div>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex flex-column flex-shrink-0 p-3 bg-dark position-fixed"  id="sidebar">
+        <a href="#" class="d-flex text-decoration-none text-white">
+          <i class="bi bi-bootstrap-fill me-4 fs-4 text-white" ></i>
+          <span class="fs-4">Sidebar Example</span>
+        </a>
+        <hr class="text-white">
+        <ul class="nav nav-pills flex-column mb-auto ">
+          <li class="nav-item text-white" id="button">
+            <a href="#" class="nav-link text-start active" type="button">
+              <i class="bi bi-house-door me-2 text-white"></i>
+              <span class="text-white">Home <span class="visually-hidden">(current)</span></span>
+            </a>
+          </li>
+          <li class="nav-item text-white" id="button">
+            <a href="#" class="nav-link text-start"  type="button">
+              <i class="bi bi-speedometer me-2 text-white"></i>
+              <span class="text-white">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item text-white" id="button">
+            <a href="#" class="nav-link text-start"  type="button">
+              <i class="bi bi-table me-2 text-white"></i>
+              <span class="text-white">Order</span>
+            </a>
+          </li>
+          <li class="nav-item" id="button">
+            <a href="#" class="nav-link text-start" type="button">
+              <l class="bi bi-grid me-2 text-white"></l>
+              <span class="text-white">Products</span>
+            </a>
+          </li>
+          <li class="nav-item" id="button">
+            <a href="#" class="nav-link text-start">
+              <i class="bi bi-person-circle me-2 text-white"></i>
+              <span class="text-white">Customers</span>
+            </a>
+          </li>
+        </ul>
+        <div id="space"></div>
+        <hr class="text-light">
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="true">
+            <img src="pix.jpg" class="rounded-circle me-2" width="20" height="20"> 
+            <strong>mdo</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </body>
+    <!--Dropdown file link-->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="sidebars.js"></script>
+</html>
